@@ -1,0 +1,22 @@
+<h1>List of Parks</h1>
+
+<div id="map" style="height: 500px;"></div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize map
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 9,
+      center: { lat: 51.5074, lng: -0.1278 }  // London
+    });
+
+    // Other pin points from seed file
+    <% @locations.each do |location| %>
+      var marker = new google.maps.Marker({
+        position: { lat: <%= location.latitude %>, lng: <%= location.longitude %> },
+        map: map,
+        title: '<%= location.name %>'
+      });
+    <% end %>
+  });
+</script>

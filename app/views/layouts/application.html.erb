@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map of Parks</title>
+
+  <!-- Google Maps JavaScript API (No API Key) -->
+  <%# <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> %>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+
+
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+
+  <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+</head>
+<body>
+
+  <%= yield %>
+
+</body>
+</html>
