@@ -2,3 +2,5 @@
 
 current map view: 
 <img width="1358" alt="Screenshot 2025-01-31 at 23 32 35" src="https://github.com/user-attachments/assets/68ac4f1c-8e23-4a87-93bf-39296b19bbf1" />
+
+
